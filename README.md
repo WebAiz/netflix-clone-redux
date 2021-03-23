@@ -1,3 +1,5 @@
+## You can view the Netflix clone on [https://netflix-clone-redux-94cf3.web.app/]
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## BEM naming convention were applied
