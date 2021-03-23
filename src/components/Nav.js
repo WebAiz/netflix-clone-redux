@@ -3,7 +3,7 @@ import { useHistory } from 'react-router';
 import "../styles/Nav.css"
 
 
-function Nav() {
+function Nav({ subscription }) {
     const [show, handleShow] = useState(false);
     const history = useHistory();
 
@@ -25,7 +25,7 @@ function Nav() {
         <div className={`nav ${show && 'nav__black'}`}>
             <div className="nav__contents">
                 <img
-                    onClick={() => history.push('/')}
+                    onClick={() => { subscription ? history.push('/') : history.push('/profile') }}
                     className='nav__logo' src="https://img.pngio.com/netflix-logo-png-transparent-svg-vector-freebie-supply-netflix-logo-transparent-background-800_600.png" alt="" />
 
                 <img
